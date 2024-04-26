@@ -1,15 +1,39 @@
-- name: Labeler
-  uses: actions/labeler@v4.0.0
+       run: npm test
+     - name: Run tests
+       run: npm ci
+     - name: Install dependencies
+         node-version: '14'
+       with:
+       uses: actions/setup-node@v2
+     - name: Set up Node.js
+       uses: actions/checkout@v2
+     - name: Checkout code
+     steps:
+     runs-on: ubuntu-latest
+   build:
 jobs:
-  label:
-
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pull-requests: write
-
-    steps:
-    - uses: actions/labeler@v4
+    - name: Checkout code
+    - name: Set up Node.js
       with:
-        repo-token: "${{ secrets.GITHUB_TOKEN }}"
-[![.github/workflows/labeler.yml](https://github.com/Bryan-Roe/interna/actions/workflows/labeler.yml/badge.svg?branch=main)](https://github.com/Bryan-Roe/interna/actions/workflows/labeler.yml)
+    - name: Install dependencies
+    - name: Run tests 
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+   build:
+     runs-on: ubuntu-latest
+
+      run: npm test
+
+     - name: Run tests
+       run: npm ci
+     - name: Install dependencies
+         node-version: '14'
+       with:
+       uses: actions/setup-node@v2
+     - name: Set up Node.js
+       uses: actions/checkout@v2
+     - name: Checkout code     steps:

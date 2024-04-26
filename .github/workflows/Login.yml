@@ -1,3 +1,21 @@
-              - name: Azure Login
-                uses: Azure/login@v1.5.0
-            
+      # This workflow file contains steps for Azure login.
+      - name: Another Azure Login
+      # 2. Another Azure Login
+        uses: Azure/login@v1.5.0
+  name: Azure Login Workflow
+        uses: Azure/login@v1.5.0
+        uses: Azure/login@v1.5.0
+      steps:
+      name: Azure Login Workflow
+    build:
+  jobs:
+    - name: Azure Login
+
+    steps:
+      build:
+    on: [push]
+
+      name: Azure Login Workflow
+      steps:
+        uses: Azure/login@v1.5.0
+      - name: Another Azure Login

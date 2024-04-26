@@ -3,22 +3,25 @@
   "configurations": [
     {
       "name": "C/C++ Runner: Debug Session",
-      "type": "cppdbg",
+      "type": "cppdbg", // use "lldb" if you are on macOS or Linux
       "request": "launch",
       "args": [],
-      "stopAtEntry": false,
-      "externalConsole": false,
       "cwd": "/workspaces/interna",
       "program": "/workspaces/interna/build/Debug/outDebug",
-      "MIMode": "gdb",
-      "miDebuggerPath": "gdb",
+        ]
+        "setupCommands": [
+          "ignoreFailures": true
+}      "miDebuggerPath": "/usr/bin/gdb",
       "setupCommands": [
-        {
           "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
           "ignoreFailures": true
         }
-      ]
-    }
-  ]
-}
+       ]
+         }
+           "ignoreFailures": true
+           "text": "-enable-pretty-printing",
+           "description": "Enable pretty-printing for gdb",
+         {
+       "setupCommands": [
+       "MIMode": "gdb",
+       "miDebuggerPath": "/usr/bin/gdb",
